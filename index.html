@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Gestion</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Gestion de recouvrement</h1>
+
+    </header>
+    <main>
+        <button class="button blue mobile" id="idClient">Nouveau client</button>
+        <table id="tblClient" class="records">
+            <thead>
+                <tr>
+                    <td>Id client</td>
+                    <td>Full Name</td>
+                    <td>Gender</td>
+                    <td>N° tel</td>
+                    <td>Email</td>
+                    <td>Adress</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Create New customer</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="id" data-index="new" placeholder="Id client" required>
+                    <input type="text" class="model-field" id="name" placeholder="Full name" required>
+                    <input type="text" class="model-field" id="gender" placeholder="Gender" required>
+                    <input type="text" class="model-field" id="fone" placeholder="N° tel" required>
+                    <input type="mail" class="model-field" id="mail" placeholder="Email" required>
+                    <input type="text" class="model-field" id="adress" placeholder="Address" required>
+                </form>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Save</button>
+                    <button class="button blue" id="cancel">Cancel</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Hltic Corp 2022 <br> Fatma Ousmane<br> Full Stack Senior Developer<br> Phone: +23563641365<br> fatmaousmane247.a@gmail.com
+        <br>
+    </footer>
+</body>
+
+</html>
